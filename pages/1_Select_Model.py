@@ -18,4 +18,4 @@ if st.button("Continue ➡️"):
         st.session_state["model_path"] = "models/yolov8-trash-detector.pt"
     else:
         st.session_state["model_path"] = "models/best_model.pt"
-    st.switch_page("Pages/2_Run_Detection.py")
+    st.switch_page("pages/2_Run_Detection.py")
