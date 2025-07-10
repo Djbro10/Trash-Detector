@@ -1,0 +1,92 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #e8f0fe);
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+/* Headers */
+h1, h2, h3, h4 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+.stButton>button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.stButton>button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Radio buttons alignment */
+.stRadio > div {
+    flex-direction: row !important;
+    justify-content: center;
+}
+
+/* Tabs alignment */
+.stTabs [role="tablist"] {
+    justify-content: center;
+}
+
+/* Uploaded image */
+img {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+}
+img:hover {
+    transform: scale(1.02);
+}
+
+/* Header block */
+.header {
+    text-align: center;
+    padding: 40px;
+    background-color: #4b7bec;
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* File uploader and webcam checkbox styling */
+label, .stCheckbox {
+    cursor: pointer !important;
+}
+
+/* Improve spacing for upload */
+[data-testid="stFileUploader"] {
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive padding */
+@media (max-width: 768px) {
+    .header {
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .stButton>button {
+        width: 100%;
+        padding: 0.6rem 1rem;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+}

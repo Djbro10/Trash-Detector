@@ -1,0 +1,41 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.reportview-container {
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+.sidebar .sidebar-content {
+    background-color: #e0f7fa;
+    color: #006064;
+}
+
+.stButton>button {
+    background-color: #00796b;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.stButton>button:hover {
+    background-color: #004d40;
+}
+
+.stFileUploader>div {
+    background-color: #fff3e0;
+}
+
+.stSelectbox>div {
+    background-color: #ffffff;
+    border: 1px solid #00796b;
+}
+
+.stImage {
+    border-radius: 8px;
+    border: 2px solid #00796b;
+}

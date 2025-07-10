@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YOLOv8 Detection</title>
+</head>
+<body>
+    <h2>Upload Image or Use Webcam</h2>
+
+    <!-- Image Upload Form -->
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <input type="submit" value="Upload Image">
+    </form>
+
+    {% if uploaded_img %}
+        <h3>Prediction Result:</h3>
+        <img src="{{ url_for('static', filename=uploaded_img) }}" width="600">
+    {% endif %}
+
+    <hr>
+
+    <h3>Live Webcam Detection:</h3>
+    <img src="{{ url_for('video_feed') }}" width="800">
+</body>
+</html>
