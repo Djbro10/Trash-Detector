@@ -12,4 +12,4 @@ st.image("assets/background.jpg", use_container_width=True, caption="Trash Detec
 st.markdown("### Click below to begin detecting trash using AI-powered models!")
 
 if st.button("🚀 Get Started"):
-    st.switch_page("pages/1_Select_Model.py")
+    st.switch_page("Pages/1_Select_Model.py")
